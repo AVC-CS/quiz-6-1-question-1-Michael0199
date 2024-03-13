@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int getTwoValues(int,int);
+int getTwoValues(int &,int &);
 int getNextPrime(int);
 int getPrevPrime(int);
 
-int getTwoValues(int a,int b){
+int getTwoValues(int &a,int &b){
 cout<< "Enter two integer values: ";
 int d=2;
 for (int i=0; i<d; i++){
@@ -15,7 +15,7 @@ if (a > b)
 else 
   break;
 }
-  return a,b;
+  // return a,b;
 }
 
 int getNextPrime(int x){
@@ -30,10 +30,11 @@ int getNextPrime(int x){
    }
     t++;
    if (i == number )
-     break;
-   int& prime1 = number;
+     return number;
+     // break;
+   // int& prime1 = number;
   }
-   return x;
+  return -1;
   }
 
 
