@@ -5,12 +5,13 @@ void getTwoValues(int&,int&);
 int getNextPrime(int);
 int getPrevPrime(int);
 
-void getTwoValues(int& a,int& b){
-cout<< "Enter two integer values: ";
+void getTwoValues(int& begin,int& end){
+
 int d=2;
 for (int i=0; i<d; i++){
-cin>>a>>b;
-if (a > b)
+cout<< "Enter two integer values: ";
+cin>>begin>>end;
+if (begin > end)
   d++;
 else 
   break;
