@@ -38,7 +38,7 @@ return x;
 
 int getPrevPrime(int z){
   int d,i,number,t;
-  for (d = 1; d < z; d++) { 
+  for (d = 0; d < z; d++) { 
     number = d;
      for (i = 2; i < number; i++) {
        if (number % i == 0) {
